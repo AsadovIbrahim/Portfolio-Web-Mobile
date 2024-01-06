@@ -79,16 +79,16 @@ main {
 }
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; /* Adjust the base font size for smaller screens */
+        font-size: 16px;
     }
 
     header {
-        padding: 20px; /* Adjust header padding */
+        padding: 20px; 
     }
 
     header nav ul {
-        font-size: 16px; /* Adjust font size for navigation links */
-        gap: 20px; /* Reduce the gap between navigation links */
+        font-size: 16px; 
+        gap: 20px; 
     }
     header nav ul{
         visibility: collapse;
@@ -100,36 +100,36 @@ main {
     main {
         display: flex;
         flex-direction: column;
-        margin-top: 100px; /* Adjust main margin-top */
+        margin-top: 100px;
     }
 
     main .resume {
         display: flex;
         flex-direction: column;
-        padding: 0 20px; /* Adjust padding for resume section */
+        padding: 0 20px; 
     }
 
     main .resume .resume-info {
-        width: 100%; /* Make the resume info full width */
+        width: 100%; 
         display: flex;
         flex-direction: column;
         margin-top: 120px;
-        text-align: center; /* Center align text */
+        text-align: center;
     }
 
     main .resume img {
-        transform: translateY(-400%);
+        transform: translateY(-480%);
         margin: 0 auto;
         width: 200px;
         height: 150px;
     }
 
     main .resume .resume-info h1 {
-        font-size: 36px; /* Decrease font size for the heading */
+        font-size: 36px; 
     }
 
     main .resume .resume-info p {
-        margin: 20px 0; /* Adjust margin for paragraph */
+        margin: 20px 0; 
     }
     
     main .posts-section div {
@@ -137,7 +137,7 @@ main {
         display: flex;
         justify-content: center;
         width: auto;
-        padding: 20px; /* Adjust padding for posts section */
+        padding: 20px;
     }
 
     main .posts-section div .posts {
@@ -154,12 +154,12 @@ main {
     }
 
     main .posts-section div .posts li {
-        width: 100%; /* Make post items full width */
-        margin-bottom: 20px; /* Add margin between posts */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     main .featured-works {
-        padding: 15px; /* Adjust padding for featured works section */
+        padding: 15px; 
     }
     main .featured-works .work-list .work-item {
         display: flex;
@@ -168,7 +168,6 @@ main {
     }
     
     
-    /* Additional adjustments for smaller screens can be added here */
 }
 
 main .resume {
