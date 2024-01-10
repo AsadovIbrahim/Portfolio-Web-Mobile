@@ -7,8 +7,12 @@
     box-sizing: border-box;
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none;
+}
+header ul img{
+    visibility: collapse;
 }
 
 a {
@@ -47,9 +51,7 @@ header nav ul {
     font-weight: 500;
     gap: 30px;
 }
-header nav ul .mobile-navbar{
-    visibility: collapse;
-}
+
 
 header nav ul li a {
     transition-duration: 0.3s;
@@ -68,114 +70,11 @@ main {
     margin-top: 140px;
 }
 
-@media screen and (max-width:1025px) {
-    header nav ul{
-        visibility: collapse;
-    }
-    header nav ul .mobile-navbar{
-        visibility: visible;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 20px; 
-    }
-
-    header nav ul {
-        font-size: 16px; 
-        gap: 20px; 
-    }
-    header nav ul{
-        visibility: collapse;
-    }
-    header nav ul .mobile-navbar{
-        visibility: visible;
-        margin-right: auto;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-    }
-
-    main .resume {
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px; 
-    }
-
-    main .resume .resume-info {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        margin-top: 120px;
-        text-align: center;
-    }
-
-    main .resume img {
-        transform: translateY(-480%);
-        margin: 0 auto;
-        width: 200px;
-        height: 150px;
-    }
-
-    main .resume .resume-info h1 {
-        font-size: 36px; 
-    }
-
-    main .resume .resume-info p {
-        margin: 20px 0; 
-    }
-    
-    main .posts-section div {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        width: auto;
-        padding: 20px;
-    }
-
-    main .posts-section div .posts {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-    }  
-    main .posts-section .popsts-link{
-        margin: 0 auto
-    }
-   
-    main .posts-section .popsts-link .view-all a{
-        visibility: collapse;
-    }
-
-    main .posts-section div .posts li {
-        width: 100%; 
-        margin-bottom: 20px; 
-    }
-
-    main .featured-works {
-        padding: 15px; 
-    }
-    main .featured-works .work-list .work-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    
-}
-
 main .resume {
     display: flex;
     flex-direction: row;
     padding: 0 150px;
     width: 100%;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 70px;
@@ -321,6 +220,7 @@ main .featured-works #featured-works {
 
 main .featured-works .work-list .work-item {
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #E0E0E0;
@@ -404,3 +304,63 @@ footer nav ul li a img:hover
     filter: contrast(5);
 }
 /* footer end */
+
+
+@media screen and (max-width:768px) {
+    main .resume{
+        flex-direction: column-reverse;
+        padding: 0 150px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    main .resume .resume-info{
+        width: auto;
+    }
+    header ul img{
+        visibility: visible;
+        justify-content: end;
+        padding-right: auto;
+    }
+    header ul li{
+        visibility: collapse;
+    }
+    main img{
+        width: 250px;
+    }
+    main .posts-section div{
+        padding: 30px 15px;
+    }
+
+
+    main .posts-section div .posts {
+        flex-direction: column;
+        align-items: center;
+    }   
+    main .posts-section div .popsts-link .recent-posts {
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .posts-section div .popsts-link .view-all {
+        display: none;
+    }
+    main .featured-works .work-list .work-item {
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+    main .posts-section div .posts li {
+        width: 100%;
+        gap: 10px;
+        line-height: 30px;
+        padding: 15px;
+    }
+    main .posts-section div .posts li h2 {
+        font-size: 22px;
+    }
+    main .featured-works {
+        padding: 0px 15px 80px 15px;
+    }
+}
