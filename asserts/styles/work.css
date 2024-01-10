@@ -170,3 +170,9 @@ footer nav ul li a img:hover
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:280px) {
+    .body-section{
+        padding: 15px;
+    }
+}

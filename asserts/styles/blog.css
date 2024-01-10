@@ -143,8 +143,22 @@ footer nav ul li a img:hover
     }
 
     .body-section .cards .card{
-        width: 339px;
-        height: 204px;
+        width: auto;
+        height: auto;
         flex-shrink: 0;
     }
 }
+
+@media screen and (max-width:320px) {
+    .body-section{
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .body-section{
+        padding: 30px;
+    }
+}
+

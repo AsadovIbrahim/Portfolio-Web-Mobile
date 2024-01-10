@@ -329,6 +329,7 @@ footer nav ul li a img:hover
     }
     main img{
         width: 250px;
+        padding-bottom: 30px;
     }
     main .posts-section div{
         padding: 30px 15px;
@@ -362,5 +363,8 @@ footer nav ul li a img:hover
     }
     main .featured-works {
         padding: 0px 15px 80px 15px;
+    }
+    main .featured-works h3 {
+        text-align: center;
     }
 }
